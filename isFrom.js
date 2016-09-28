@@ -1,17 +1,16 @@
-
 var regNumber = function(regCheck){
-  var isGP = regCheck.endsWith('DV 23 NB GP', 'GP');
-  console.log(isGP);
+  var isGP = regCheck.endsWith('GP');
 
-  var isMP = regCheck('DV 23 LP GP', 'MP');{}
+  var isMP = regCheck.endsWith('MP');
+  var isMP = false;
 
-  console.log(isMP);
-}
-  var isBellville = isFrom('CY189-012', 'CY');
+  var isBellville = isFrom.startsWith('CY');
   var isBellville = true;
-  console.log(isBellville);
 
-  var isDurban = isFrom('-CY189-012', 'ND');
+  var isDurban = isFrom.startsWith('ND');
   var isDurban = false;
-  console.log(isDurban);
 }
+  console.log(isDurban);
+  console.log(isBellville);
+  console.log(isMP);
+  console.log(isGP);
