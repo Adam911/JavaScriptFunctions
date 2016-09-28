@@ -1,16 +1,5 @@
-var regNumber = function(regCheck){
-  var isGP = regCheck.endsWith('GP');
-
-  var isMP = regCheck.endsWith('MP');
-  var isMP = false;
-
-  var isBellville = isFrom.startsWith('CY');
-  var isBellville = true;
-
-  var isDurban = isFrom.startsWith('ND');
-  var isDurban = false;
+var regCheck = function(regNumber, location){
+   var isGP = regNumber.includes(location);
 }
-  console.log(isDurban);
-  console.log(isBellville);
-  console.log(isMP);
-  console.log(isGP);
+console.log(isGP);
+regCheck('DV 23 NB GP', 'GP');
