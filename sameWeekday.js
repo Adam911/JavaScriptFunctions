@@ -1,6 +1,18 @@
-var getDay = function()
-var givendate = '2016-09-11';
-var givendate2 = '2016-02-11';
-var date = new Date(givendate);
+const dateOne = new Date("2016-09-12");
+const dateTwo = new Date("2016-09-12");
 
-console.log(givendate.getDay(); === givendate2.getDay(););
+var sameWeekday = function(dateOne,dateTwo) {
+  var weekdays = ['Monday','Tuesday','Thursday','Friday','Saturday','Sunday']
+
+  var dateWeekOne = dateOne.getDay();
+  var dateWeekTwo = dateTwo.getDay();
+
+var weekDayOne = weekdays[dateWeekOne];
+var weekDayTwo = weekdays[dateWeekTwo];
+
+var checkdates =  weekDayOne === weekDayTwo;
+
+console.log(checkdates);
+
+}
+sameWeekday(dateOne,dateTwo);
