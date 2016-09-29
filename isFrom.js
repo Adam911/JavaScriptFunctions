@@ -1,5 +1,10 @@
-var regCheck = function(regNumber, location){
-   var isGP = regNumber.includes(location);
+var isFrom = function(regNumber, location){
+   var isBelliville = regNumber.startsWith(location);
+   var isDurban = regNumber.startsWith(location);
+
+   console.log("Where the number plate derives from is "+ isBelliville );
+   console.log("Where the number plate derives from is "+ isDurban );
+
 }
-console.log(isGP);
-regCheck('DV 23 NB GP', 'GP');
+isFrom('CY189-012', 'CY');
+isFrom('CY189-012', 'ND');
