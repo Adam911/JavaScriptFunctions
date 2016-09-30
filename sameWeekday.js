@@ -12,7 +12,7 @@ var weekDayTwo = weekdays[dateWeekTwo];
 
 var checkdates =  weekDayOne === weekDayTwo;
 
-console.log(checkdates);
-
+return checkdates;
 }
-sameWeekday(dateOne,dateTwo);
+var dateResult = sameWeekday(dateOne,dateTwo);
+console.log(dateResult);

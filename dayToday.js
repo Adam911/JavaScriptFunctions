@@ -3,6 +3,8 @@ var dayToday =function(){
   var todayDay  = new Date();
   var date =todayDay.getDay();
   var today = weekDays[date];
-  console.log("Today is  " + today);
+
+return today;
 }
-dayToday();
+var theDay = today();
+  console.log(theDay);

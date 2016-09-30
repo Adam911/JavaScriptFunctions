@@ -1,10 +1,10 @@
 var isFrom = function(regNumber, location){
-   var isBelliville = regNumber.startsWith(location);
+   var isBellville = regNumber.startsWith(location);
    var isDurban = regNumber.startsWith(location);
 
-   console.log("Where the number plate derives from is "+ isBelliville );
-   console.log("Where the number plate derives from is "+ isDurban );
-
+return isDurban;
 }
-isFrom('CY189-012', 'CY');
-isFrom('CY189-012', 'ND');
+var result = isFrom('CY189-012','ND');
+var resultOne = isFrom('CJ 98912', 'CJ');
+console.log(result);
+console.log(resultOne);

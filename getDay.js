@@ -1,7 +1,8 @@
- var getDay = function()
- var givendate = '2016-09-11';
-
- var date = new Date(givendate);
-
- console.log(date.getDay()+ "It falls on a Sunday");
-//Hardcoded string based on the date inputted
+var getDay = function(day){
+  var dayNmbr = day.getDay();
+  var weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  var nmeday = weekDays[dayNmbr];
+  return nmeday;
+}
+const dated = new Date("1994-12-09");
+console.log(getDay(dated));
