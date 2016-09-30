@@ -6,5 +6,4 @@ var dayToday =function(){
 
 return today;
 }
-var theDay = today();
-  console.log(theDay);
+  console.log(dayToday());
