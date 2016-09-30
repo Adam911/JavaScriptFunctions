@@ -8,5 +8,5 @@ var regCheck = function(regNumber, location){
 var result = regCheck('DV 23 NB GP', 'GP');
 var resultOne = regCheck('DV 23 LP GP', 'MP');
 
-console.log(result);
-console.log(resultOne);
+console.log("The vehicle registration number is  "+ result);
+console.log("The vehicle registration number is  "+ resultOne);

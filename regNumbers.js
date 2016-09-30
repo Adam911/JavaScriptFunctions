@@ -26,9 +26,8 @@ return isFromLimpopo;
    //return parameters
 }
 
-
-console.log(Bellville('CJ 98912'));
-console.log(Paarl('CJ 98912'));
-console.log(CapeTown('CA 98912'));
-console.log(Limpopo('DR T122 L'));
-console.log(Gauteng('DR 12 TY GP'));
+console.log("The following number plates is "+Bellville('CJ 98912'));
+console.log("The following number plates is "+Paarl('CJ 98912'));
+console.log("The following number plates is "+CapeTown('CA 98912'));
+console.log("The following number plates is "+Limpopo('DR T122 L'));
+console.log("The following number plates is "+Gauteng('DR 12 TY GP'));
